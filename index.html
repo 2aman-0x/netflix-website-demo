@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Login</title>
     
-
+<!---CSS Starts form here-->
 <style>
 .background {
     position: fixed;
@@ -87,7 +87,7 @@ body::before {
     width: 100%;
     height: 100%;
     background: url('https://source.unsplash.com/1600x900/?netflix,dark') no-repeat center center/cover;
-    filter: blur(8px); /* ব্যাকগ্রাউন্ড ব্লার */
+    filter: blur(8px); /* background blur */
     z-index: -2;
 }
 
@@ -106,7 +106,7 @@ body::before {
 
 /* Form Styling */
 .login-form h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .login-form input {
@@ -217,6 +217,7 @@ body::before {
 }
 
     </style>
+<!---CSS ends form here-->
 
 </head>
 <body>
@@ -233,12 +234,13 @@ body::before {
             <input type="password" placeholder="Password" required>
             <button type="submit">Sign In</button>
             <div class="help-section">
-                <label><input type="checkbox"> Remember me</label>
-                <a href="#">Need help?</a>
+                <label><input type="checkbox">Remember me</label>
+                <a href="https://help.netflix.com/en">Need help?</a>
             </div>
             <p class="signup-text">
-                New to Netflix? <a href="#">Sign up now</a>.
-            </p>
+                New to Netflix? <a href="https://www.netflix.com/signup">Sign up now</a>.
+            </p><br>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot</p>
         </form>
     </div>
 </body>
