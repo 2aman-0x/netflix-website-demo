@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login</title>
+    
+
+<style>
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -2;
+}
+
+/*Title Section */
+.title-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.title-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.title-container h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+    .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -2;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background Image */
+body {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Background Overlay (Dark Effect) */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* কালো Overlay */
+    z-index: -1;
+}
+
+/* Background Blur Effect */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?netflix,dark') no-repeat center center/cover;
+    filter: blur(8px); /* ব্যাকগ্রাউন্ড ব্লার */
+    z-index: -2;
+}
+
+/* Login Box */
+.login-container {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 50px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* Form Styling */
+.login-form h1 {
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-form button:hover {
+    background: #b20710;
+}
+
+/* Help Section */
+.help-section {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.help-section a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .login-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="background"></div> <!-- Background Blur -->
+    <div class="title-container">
+    <h1> Unlimited movies, TV dhoes, and more</h1>
+    <h6>Starts at USD 2.99. Cancel anytime.</h6>
+    </div><br>
+
+    <div class="login-container">
+        <form class="login-form">
+            <h1>Sign In</h1>
+            <input type="email" placeholder="Email or phone number" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+            <div class="help-section">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Need help?</a>
+            </div>
+            <p class="signup-text">
+                New to Netflix? <a href="#">Sign up now</a>.
+            </p>
+        </form>
+    </div>
+</body>
+</html>
